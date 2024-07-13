@@ -1,0 +1,44 @@
+.sideNav {
+  width: 100px;
+  height: 200%;
+  background-color: rgb(27, 27, 73);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100px;
+}
+
+.imageStyle {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+.buttonStylePassive {
+  width: 100px;
+  height: 15px;
+  background-color: rgb(27, 27, 73);
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonStyleActive {
+    width: 100px;
+  height: 15px;
+  background-color: #000;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.sideNavButtonText {
+  font-family: Arial;
+  font-size: 7px;
+  color: #fff;
+}

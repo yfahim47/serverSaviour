@@ -1,0 +1,157 @@
+.infoComponent {
+    margin-top: 10px;
+   
+}
+
+.outerBox {
+    /* height: 30px; */
+    /* width: 470px; */
+    /* background-color:gainsboro; */
+}
+
+.innerBox1 {
+    display: flex;
+    flex-direction: row;
+    height: 14px;
+    border-top: 0.025px solid grey;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0.125px solid grey;
+    border-left: 0.125px solid grey;
+    background-color: rgb(198, 198, 198);
+}
+
+.innerBox2 {
+    display: flex;
+    flex-direction: row;
+    /* height: 16px; */
+}
+
+.innerBox3 {
+    height: 15px;
+    border: 0.125px solid grey;
+}
+
+.nameTitleBox {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameBox {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.25px solid grey;
+    border-bottom: 0.25px solid grey;
+    border-right: 0.25px solid grey;
+    border-bottom-left-radius: 5px;
+}
+
+.tagTitleBox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagBox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.25px solid grey;
+    border-bottom: 0.25px solid grey;
+}
+
+.healthTitleBox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.healthBox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.25px solid grey;
+    border-bottom: 0.25px solid grey;
+}
+
+.descriptionTitleBox {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionBox {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.25px solid grey;
+    border-bottom: 0.25px solid grey;
+}
+
+.durationTitleBox {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.durationBox {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.25px solid grey;
+    border-bottom: 0.25px solid grey;
+}
+
+.detailsTitleBox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsBox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.25px solid grey;
+    border-bottom: 0.25px solid grey;
+    border-bottom-right-radius: 5px;
+}
+
+.textHeading {
+    font-family: Arial;
+    font-size: 7px;
+    color: #282727ba;
+    font-weight: 600;
+}
+
+.text {
+    font-family: Arial;
+    font-size: 7px;
+    color: #282727ba;
+}

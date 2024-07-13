@@ -1,0 +1,47 @@
+.homestyle {
+    padding: 20px;
+}
+
+.toptextbox {
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.textHeadingHome {
+    font-family: Arial;
+    font-size: 13px;
+    color: #282727ba;
+    font-weight: 600;
+}
+
+.texthome {
+    font-family: Arial;
+    font-size: 8px;
+    color: #282727ba;
+    margin-right: 5px;
+}
+
+.pollingflag {
+    width: 40px;
+    background-color: green;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftpartheading {
+    display: flex;
+    flex-direction: row;
+}
+
+.stoppolling {
+    font-family: Arial;
+    font-size: 5px;
+    color: #fff;
+}
