@@ -4,11 +4,27 @@ import "../styles/homeStyles.css";
 import getData from "../calls/getData";
 import data from "../data/data.js"
 
+
+
 function Home() {
+   
+  const [datat, setDatat] = useState([]);
   
+  const [serviceList, setServiceList] = useState([]);
+  useEffect(()=> {
+      getData().then((d)=>{
+   
+      var result = Object.keys(d).map((key) => [key, d[key]]);
+     let arr=[...result];
+ 
+        setDatat(arr);
+        console.log(datat);
+      //  console.log(arr);
+      // setServiceList(arr);
+      });
+//console.log(arr.map((key)=>console.log(key[0])));
 
-  console.log(data)
-
+  },[]);
   return (
     <div className="homestyle">
       <div className="toptextbox">
@@ -20,11 +36,11 @@ function Home() {
           </div>
         </div>
       </div>
-      <InfoTab data={data[0]} index={0} />
-      <InfoTab data={data[1]} index={1}  />
-      <InfoTab data={data[2]} index={2}  />
-      <InfoTab data={data[3]} index={3}  />
-      <InfoTab data={data[4]} index={4}  />
+      
+      {
+       datat.map((e,index)=><InfoTab data={e[1]} key={index}  val={e[0]}/>)
+      }
+     
     </div>
   );
 }

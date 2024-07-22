@@ -4,11 +4,11 @@ import Green from "./green";
 import Red from "./red";
 import Yellow from "./yellow";
 
-function InfoTab({ data, index }) {
-  const key = Object.keys(data)[0];
-  console.log(key);
-  return (
-    <div className="infoComponent">
+function InfoTab({ data, val}) {
+ const envlist=data.map(e=>(e.environment.name));
+ const envurl=data.map(e=>(e.url));
+
+  return (   <div className="infoComponent">
       <div className="outerBox">
         <div className="innerBox1">
           <div className="nameTitleBox">
@@ -32,41 +32,13 @@ function InfoTab({ data, index }) {
         </div>
         <div className="innerBox2">
           <div className="nameBox">
-            <text className="text">{key}</text>
+            <text className="text">{val}</text>
           </div>
           <div className="tagBox">
-            {key === "Service A" ? (
-              <>
-                <Green name={"Liberty"} />
-                <Yellow name={"SIT-01"} />
-                <Green name={"SIT-02"} />
-                <Red name={"SIT-03"} />
-              </>
-            ) : key === "Service B" ? (
-              <>
-                <Green name={"Liberty"} />
-                <Red name={"SIT-01"} />
-                <Green name={"SIT-02"} />
-                <Red name={"SIT-03"} />
-              </>
-            ) : key === "Service C" ? (
-              <>
-                <Red name={"Liberty"} />
-                <Green name={"SIT-01"} />
-              </>
-            ) : key === "Service D" ? (
-              <>
-                <Green name={"Liberty"} />
-                <Green name={"SIT-01"} />
-                <Yellow name={"SIT-02"} />
-                <Green name={"SIT-03"} />
-              </>
-            ) : key === "Service E" ? (
-              <>
-                <Red name={"Liberty"} />
-                <Red name={"SIT-01"} />
-              </>
-            ) : null}
+            {
+              envlist.map((e)=><Green name={e}/>)
+            }
+             
             <text className="text"></text>
           </div>
           <div className="healthBox">
@@ -74,30 +46,20 @@ function InfoTab({ data, index }) {
           </div>
           <div className="descriptionBox">
             <text className="text">
-              {key === "Service A"
-                ? "http://service-A-03.example.com"
-                : key === "Service B"
-                ? "http://service-B-1iberty.example.com"
-                : key === "Service C"
-                ? "http://service-C-03.example.com"
-                : key === "Service D"
-                ? "http://service-D-02.example.com"
-                : key === "Service E"
-                ? "http://service-E-01.example.com"
-                : null}
+              {envurl.map(e=><text className="text">{e}</text>)}
             </text>
           </div>
           <div className="durationBox">
             <text className="text">
-              {key === "Service A"
+              {val === "Service A"
                 ? "00:00:26:8989888"
-                : key === "Service B"
+                : val === "Service B"
                 ? "00:45:56:8977867"
-                : key === "Service C"
+                : val === "Service C"
                 ? "02:00:26:7879676"
-                : key === "Service D"
+                : val === "Service D"
                 ? `12:00:26:2342434`
-                : key === "Service E"
+                : val === "Service E"
                 ? "03:00:16:2038921"
                 : null}
             </text>
